@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>山本 ウェイン海人 | Wayne Kaito Yamamoto — Yuzawa Town DX Portfolio</title>
+  <meta name="description" content="Yuzawa Town Regional Revitalization Cooperation Corps (Entrepreneurship Division) - Tourism DX, Inbound Systems, and Public Tools." />
+
+  <!-- Tailwind CSS via CDN with Argon Design System Custom Tokens -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            argon: {
+              canvas: '#f8f9fe',
+              navy: '#0c1b33',
+              navyLight: '#162d52',
+              amber: '#d97706',
+              amberSoft: '#fef3c7',
+              slate: '#4a5568',
+              muted: '#64748b',
+              surface: '#ffffff'
+            }
+          },
+          fontFamily: {
+            sans: [
+              'system-ui',
+              '-apple-system',
+              'BlinkMacSystemFont',
+              '"Hiragino Sans"',
+              '"BIZ UDPGothic"',
+              '"Noto Sans JP"',
+              'sans-serif'
+            ]
+          },
+          boxShadow: {
+            'argon-sm': '0 4px 6px -1px rgba(12, 27, 51, 0.05), 0 2px 4px -1px rgba(12, 27, 51, 0.03)',
+            'argon-md': '0 10px 15px -3px rgba(12, 27, 51, 0.08), 0 4px 6px -2px rgba(12, 27, 51, 0.04)',
+            'argon-hover': '0 15px 30px -5px rgba(12, 27, 51, 0.12), 0 8px 10px -6px rgba(12, 27, 51, 0.05)'
+          },
+          borderRadius: {
+            'argon': '0.75rem'
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Argon Micro-interaction Utilities */
+    body {
+      background-color: #f8f9fe;
+      color: #4a5568;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .argon-card {
+      background-color: #ffffff;
+      border-radius: 0.75rem;
+      border: 1px solid rgba(12, 27, 51, 0.06);
+      box-shadow: 0 4px 6px -1px rgba(12, 27, 51, 0.05), 0 2px 4px -1px rgba(12, 27, 51, 0.03);
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .argon-card-interactive:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px -5px rgba(12, 27, 51, 0.12), 0 8px 10px -6px rgba(12, 27, 51, 0.05);
+      border-color: rgba(217, 119, 6, 0.4);
+    }
+
+    .argon-btn {
+      transition: all 0.15s ease;
+    }
+
+    .argon-btn:active {
+      transform: translateY(1px);
+    }
+
+    .focus-ring:focus-visible {
+      outline: 2px solid #d97706;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-6 px-4 sm:px-6">
+
+  <!-- Main Mobile-First Container (540px max-width) -->
+  <div class="w-full max-w-[540px] mx-auto space-y-6">
+
+    <!-- 1. HERO & QUICK ACTION HEADER -->
+    <header class="argon-card relative overflow-hidden p-6 sm:p-7 border-t-4 border-t-argon-amber">
+      <!-- Subtle Background Geometric Accent -->
+      <div class="flex items-center justify-between gap-2 mb-4">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-argon-amberSoft text-argon-amber border border-amber-300/60">
+          <span class="w-1.5 h-1.5 rounded-full bg-argon-amber"></span>
+          Yuzawa Town DX Initiative / 湯沢町 地域おこし協力隊
+        </span>
+      </div>
+
+      <!-- Bilingual Name Hierarchy -->
+      <div class="space-y-1">
+        <h1 class="text-2xl sm:text-3xl font-bold text-argon-navy tracking-tight">
+          山本 ウェイン海人
+        </h1>
+        <p class="text-sm sm:text-base font-medium text-argon-muted tracking-normal">
+          Wayne Kaito Yamamoto
+        </p>
+      </div>
+
+      <!-- Exact Institutional Affiliation -->
+      <div class="mt-4 pt-4 border-t border-slate-100 space-y-1.5 text-xs sm:text-sm text-argon-slate">
+        <p class="font-semibold text-argon-navy">
+          湯沢町 地域おこし協力隊（起業型） / 一般社団法人 雪国観光まちづくり公社
+        </p>
+        <p class="text-argon-muted leading-relaxed">
+          Yuzawa Town Regional Revitalization Cooperation Corps (Entrepreneurship Division) — Stationed at Snow Country Tourism Association (雪国観光協会 拠点)
+        </p>
+      </div>
+
+      <!-- Direct Contact Metadata Bar -->
+      <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-argon-muted">
+        <a href="tel:+818047217059" class="inline-flex items-center gap-1.5 hover:text-argon-amber transition-colors focus-ring rounded">
+          <svg class="w-3.5 h-3.5 text-argon-amber shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+          </svg>
+          <span>+81-80-4721-7059</span>
+        </a>
+        <span class="text-slate-300">•</span>
+        <span class="inline-flex items-center gap-1">
+          Tourism DX / Inbound / Public Transit
+        </span>
+      </div>
+
+      <!-- Argon Action Buttons -->
+      <div class="mt-6 space-y-2.5">
+        <!-- Primary Action: vCard Download -->
+        <a href="./contact.vcf" download="Wayne_Kaito_Yamamoto.vcf"
+           class="argon-btn focus-ring w-full inline-flex items-center justify-center gap-2.5 px-4 py-3 rounded-argon bg-argon-navy hover:bg-argon-navyLight text-white font-semibold text-sm shadow-argon-sm">
+          <svg class="w-4 h-4 text-argon-amber shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+          </svg>
+          <span>連絡先を保存 (.vcf)</span>
+        </a>
+
+        <!-- Secondary Action Row: Email & GitHub Only -->
+        <div class="grid grid-cols-2 gap-2.5">
+          <a href="mailto:yamawayne4@gmail.com"
+             class="argon-btn focus-ring inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-argon bg-slate-50 hover:bg-amber-50/60 text-argon-navy border border-slate-200 hover:border-argon-amber/50 font-medium text-xs sm:text-sm">
+            <svg class="w-4 h-4 text-argon-amber shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            <span>Email</span>
+          </a>
+
+          <a href="https://github.com/umiwumi" target="_blank" rel="noopener noreferrer"
+             class="argon-btn focus-ring inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-argon bg-slate-50 hover:bg-amber-50/60 text-argon-navy border border-slate-200 hover:border-argon-amber/50 font-medium text-xs sm:text-sm">
+            <!-- Authentic GitHub Octocat SVG -->
+            <svg class="w-4 h-4 text-argon-navy shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. DEPLOYMENTS & PUBLIC TOOLS (DYNAMIC RENDERING) -->
+    <main class="space-y-6">
+      <section aria-labelledby="projects-heading" class="space-y-3">
+        <div class="flex items-center justify-between px-1">
+          <h2 id="projects-heading" class="text-sm font-bold uppercase tracking-wider text-argon-navy flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-argon-amber"></span>
+            Live Systems &amp; Public Tools / 公開システム
+          </h2>
+          <span id="project-count" class="text-xs font-medium text-argon-muted"></span>
+        </div>
+
+        <!-- Dynamically Populated Container -->
+        <div id="project-list" class="space-y-3"></div>
+      </section>
+
+      <!-- 3. CORE COMPETENCIES & BACKGROUND -->
+      <section aria-labelledby="competencies-heading" class="argon-card p-6 space-y-5">
+        <div class="border-b border-slate-100 pb-3">
+          <h2 id="competencies-heading" class="text-sm font-bold uppercase tracking-wider text-argon-navy flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-argon-amber"></span>
+            Core Competencies &amp; Credentials / 専門領域・資格
+          </h2>
+        </div>
+
+        <!-- Technical Domains Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="p-3.5 rounded-lg bg-slate-50/80 border border-slate-200/70">
+            <h3 class="text-xs font-bold text-argon-navy uppercase tracking-wide">Full-Stack Web</h3>
+            <p class="mt-1 text-xs text-argon-slate leading-relaxed">
+              TypeScript, Python, RESTful APIs, responsive mobile-first frontends.
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50/80 border border-slate-200/70">
+            <h3 class="text-xs font-bold text-argon-navy uppercase tracking-wide">Tourism DX Architecture</h3>
+            <p class="mt-1 text-xs text-argon-slate leading-relaxed">
+              Inbound visitor portals, multilingual UI, digital transit &amp; shuttle feeds.
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50/80 border border-slate-200/70">
+            <h3 class="text-xs font-bold text-argon-navy uppercase tracking-wide">Edge Computing</h3>
+            <p class="mt-1 text-xs text-argon-slate leading-relaxed">
+              Low-latency field deployments, QR-triggered micro-portals, resilient static apps.
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50/80 border border-slate-200/70">
+            <h3 class="text-xs font-bold text-argon-navy uppercase tracking-wide">Systems Integration</h3>
+            <p class="mt-1 text-xs text-argon-slate leading-relaxed">
+              Regional asset databases, municipal open data, automated workflow pipelines.
+            </p>
+          </div>
+        </div>
+
+        <!-- Credentials List -->
+        <div class="pt-2">
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-argon-muted mb-2.5">
+            Verified Credentials
+          </h3>
+          <div class="flex items-start gap-3 p-3.5 rounded-lg bg-amber-50/50 border border-amber-200/70">
+            <div class="mt-0.5 p-1.5 rounded-md bg-argon-amber/10 text-argon-amber shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs sm:text-sm font-bold text-argon-navy">
+                Applied Generative AI (Certificate Program)
+              </p>
+              <p class="text-xs text-argon-muted mt-0.5">
+                Johns Hopkins University / Great Learning
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer class="pt-4 pb-6 text-center space-y-2 text-xs text-argon-muted">
+      <p class="font-medium text-argon-slate">
+        &copy; <span id="current-year">2026</span> Wayne Kaito Yamamoto (山本 ウェイン海人)
+      </p>
+      <p>
+        Yuzawa Town Regional Revitalization Cooperation Corps &bull; Snow Country Tourism Association (一般社団法人 雪国観光まちづくり公社)
+      </p>
+      <div class="pt-1">
+        <a href="https://github.com/umiwumi" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1.5 text-argon-navy hover:text-argon-amber font-semibold underline decoration-argon-amber/50 underline-offset-4 transition-colors focus-ring rounded">
+          <span>github.com/umiwumi</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- DATA-DRIVEN PROJECT RENDERING SCRIPT -->
+  <script>
+    const dxProjects = [
+      {
+        title: "Winter Transit & Shuttle Guide",
+        status: "Live",
+        statusColor: "amber",
+        description: "冬季シャトルバス・地域路線案内システム (Winter_Shuttle_Schedule) — Digital shuttle & local route tracking optimized for inbound and regional commuters.",
+        url: "./Winter_Shuttle_Schedule/",
+        tags: ["HTML5", "Transit", "Mobile UI"]
+      },
+      {
+        title: "Front-Desk Digital Information Hub",
+        status: "Deployed",
+        statusColor: "navy",
+        description: "案内所窓口デジタル案内ボード (services.html) — Pre-consultation tourist information board streamlining visitor inquiries at the station hub.",
+        url: "./services.html",
+        tags: ["UX", "Micro-Portal", "Bilingual UI"]
+      },
+      {
+        title: "Regional Specialty Asset Registry",
+        status: "In Development",
+        statusColor: "slate",
+        description: "地域特産品・酒蔵データ統合基盤 — Local producer & sake brewery data integration for unified regional storytelling and inventory discovery.",
+        url: "https://github.com/umiwumi",
+        tags: ["Python", "REST API", "Database"]
+      }
+    ];
+
+    function getStatusBadgeClasses(statusColor) {
+      switch (statusColor) {
+        case "amber":
+          return "bg-argon-amberSoft text-argon-amber border-amber-300/80";
+        case "navy":
+          return "bg-slate-100 text-argon-navy border-slate-300";
+        default:
+          return "bg-slate-50 text-argon-muted border-slate-200";
+      }
+    }
+
+    function renderProjects() {
+      const container = document.getElementById("project-list");
+      const countBadge = document.getElementById("project-count");
+
+      if (!container) return;
+
+      if (countBadge) {
+        countBadge.textContent = `${dxProjects.length} Systems`;
+      }
+
+      container.innerHTML = dxProjects.map((project) => {
+        const badgeStyle = getStatusBadgeClasses(project.statusColor);
+        const isExternal = project.url.startsWith("http");
+        const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : "";
+
+        const tagsHtml = project.tags.map((tag) =>
+          `<span class="px-2 py-0.5 text-[11px] font-medium rounded-md bg-slate-100 text-argon-slate border border-slate-200/60">${tag}</span>`
+        ).join("");
+
+        return `
+          <a href="${project.url}" ${targetAttr} class="argon-card argon-card-interactive focus-ring block p-5 group">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-base font-bold text-argon-navy group-hover:text-argon-amber transition-colors">
+                ${project.title}
+              </h3>
+              <span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold border ${badgeStyle}">
+                <span class="w-1.5 h-1.5 rounded-full ${project.statusColor === 'amber' ? 'bg-argon-amber' : 'bg-argon-navy'}"></span>
+                ${project.status}
+              </span>
+            </div>
+
+            <p class="mt-2 text-xs sm:text-sm text-argon-slate leading-relaxed">
+              ${project.description}
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+              <div class="flex flex-wrap gap-1.5">
+                ${tagsHtml}
+              </div>
+              <span class="text-xs font-semibold text-argon-navy group-hover:text-argon-amber inline-flex items-center gap-1 shrink-0 transition-colors">
+                Open
+                <svg class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        `;
+      }).join("");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderProjects();
+      const yearEl = document.getElementById("current-year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+</body>
+</html>
