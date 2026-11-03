@@ -94,7 +94,7 @@
   <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
     <div class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-cyan-500/25 to-blue-600/10 blur-[90px] animate-pulse" style="animation-duration: 8s;"></div>
     <div class="absolute top-1/4 -left-32 w-80 h-80 rounded-full bg-gradient-to-tr from-emerald-500/20 to-teal-600/10 blur-[80px]"></div>
-    <div class="absolute top-2/3 -right-20 w-88 h-88 rounded-full bg-gradient-to-bl from-amber-500/15 via-orange-600/10 to-transparent blur-[85px]"></div>
+    <div class="absolute top-2/3 -right-20 w-80 h-80 rounded-full bg-gradient-to-bl from-amber-500/15 via-orange-600/10 to-transparent blur-[85px]"></div>
     <div class="absolute -bottom-24 left-1/4 w-96 h-96 rounded-full bg-indigo-600/15 blur-[100px]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:24px_24px] opacity-40"></div>
   </div>
@@ -811,4 +811,262 @@
           btn: 'text-amber-300 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:to-orange-500/30 border-amber-500/40 shadow-glow-amber'
         }
       };
-      return themes[color] || themes
+      return themes[color] || themes.cyan;
+    }
+
+    function setText(id, text) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = text;
+    }
+
+    function setHtml(id, html) {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = html;
+    }
+
+    function renderProjects() {
+      const container = document.getElementById('project-list');
+      const countEl = document.getElementById('badge-status-count');
+      if (!container) return;
+
+      if (countEl) {
+        countEl.textContent = `${dxProjects.length} Systems`;
+      }
+
+      container.innerHTML = dxProjects.map((proj) => {
+        const t = getThemeStyles(proj.statusColor);
+        const titleText = proj.title[currentLang] || proj.title.ja;
+        const descText = proj.description[currentLang] || proj.description.ja;
+        const ctaText = proj.ctaText[currentLang] || proj.ctaText.ja;
+        const launchLabel = proj.launchLabel[currentLang] || proj.launchLabel.ja;
+        const targetUrl = proj.url[currentLang] || proj.url.ja;
+
+        const tagsHtml = proj.tags.map((tag) =>
+          `<span class="text-[10px] font-medium ${t.tag} border px-2 py-0.5 rounded">${tag}</span>`
+        ).join('');
+
+        return `
+          <article class="glass-dark rounded-2xl p-5 shadow-xl border-l-4 ${t.border} transition-all group">
+            <div class="flex items-start justify-between gap-2">
+              <span class="text-[10px] font-bold tracking-wider uppercase ${t.badge} border px-2.5 py-0.5 rounded-md font-mono">
+                ${proj.status} • ${proj.category}
+              </span>
+              <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" class="text-[11px] text-slate-400 hover:text-white font-mono underline underline-offset-2">
+                ${launchLabel}
+              </a>
+            </div>
+
+            <h3 class="text-sm sm:text-base font-bold text-white mt-2.5 ${t.titleHover} transition-colors">
+              ${titleText}
+            </h3>
+
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+              ${descText}
+            </p>
+
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              ${tagsHtml}
+            </div>
+
+            <button onclick="toggleModal('${proj.modalId}')" class="touch-target focus-ring w-full mt-3.5 flex items-center justify-center space-x-1.5 text-xs font-bold ${t.btn} border rounded-xl py-2.5 transition-all">
+              <span>${ctaText}</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderModals() {
+      const dict = content[currentLang];
+      if (!dict) return;
+
+      // Modal 1: Transit
+      setText('modal-transit-title', dict.modalTransitTitle);
+      setText('modal-transit-launch', dict.modalTransitLaunch);
+      setText('modal-transit-close', dict.modalClose);
+      setHtml('modal-transit-body', dict.modalTransitHtml);
+
+      // Modal 2: Services / Baggage
+      setText('modal-baggage-title', dict.modalBaggageTitle);
+      setText('modal-baggage-launch', dict.modalBaggageLaunch);
+      setText('modal-baggage-close', dict.modalClose);
+      setHtml('modal-baggage-body', dict.modalBaggageHtml);
+
+      // Modal 3: Specialty Registry
+      setText('modal-soba-title', dict.modalSobaTitle);
+      setText('modal-soba-launch', dict.modalSobaLaunch);
+      setText('modal-soba-close', dict.modalClose);
+      setHtml('modal-soba-body', dict.modalSobaHtml);
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      const dict = content[lang];
+      if (!dict) return;
+
+      // Header & Badges
+      setText('nav-org-main-text', dict.navOrgMain);
+      setText('nav-org-badge', dict.navOrgBadge);
+      setText('nav-org-sub', dict.navOrgSub);
+      setText('badge-gov-text', dict.badgeGov);
+      setText('badge-base', dict.badgeBase);
+
+      // Profile Identity
+      setText('profile-name', dict.profileName);
+      setText('profile-role-sub', dict.profileRoleSub);
+      setText('profile-affiliation', dict.profileAffiliation);
+      setText('profile-headline', dict.profileHeadline);
+      setText('profile-desc', dict.profileDesc);
+
+      // Contact Buttons & Chips
+      setText('btn-save-contact', dict.btnSaveContact);
+      setText('btn-share-link', dict.btnShareLink);
+      setText('chip-label-phone', dict.chipLabelPhone);
+      setText('chip-label-office', dict.chipLabelOffice);
+      setHtml('label-address', dict.labelAddress);
+
+      // Section Titles & Competencies
+      setText('heading-deployments-text', dict.headingDeployments);
+      setText('heading-competencies-text', dict.headingCompetencies);
+      setText('comp-1-title', dict.comp1Title);
+      setText('comp-1-desc', dict.comp1Desc);
+      setText('comp-2-title', dict.comp2Title);
+      setText('comp-2-desc', dict.comp2Desc);
+      setText('comp-3-title', dict.comp3Title);
+      setText('comp-3-desc', dict.comp3Desc);
+      setText('comp-4-title', dict.comp4Title);
+      setText('comp-4-desc', dict.comp4Desc);
+      setText('cert-title', dict.certTitle);
+      setText('cert-sub', dict.certSub);
+
+      // Partnership Callout & Footer
+      setText('box-pitch-title', dict.boxPitchTitle);
+      setText('box-pitch-body', dict.boxPitchBody);
+      setText('btn-inquiry', dict.btnInquiry);
+      setText('footer-text', dict.footerText);
+
+      // Mobile Bottom Bar
+      setText('tab-call', dict.tabCall);
+      setText('tab-email', dict.tabEmail);
+      setText('tab-vcard', dict.tabVcard);
+
+      // Language Switcher Buttons
+      const btnJa = document.getElementById('lang-btn-ja');
+      const btnEn = document.getElementById('lang-btn-en');
+      const activeClass = 'px-2.5 py-1 rounded-full transition-all duration-200 bg-gradient-to-r from-cyan-400 to-blue-500 text-twilight-950 font-bold shadow-sm';
+      const inactiveClass = 'px-2.5 py-1 rounded-full transition-all duration-200 text-slate-400 hover:text-white';
+
+      if (lang === 'ja') {
+        if (btnJa) btnJa.className = activeClass;
+        if (btnEn) btnEn.className = inactiveClass;
+      } else {
+        if (btnEn) btnEn.className = activeClass;
+        if (btnJa) btnJa.className = inactiveClass;
+      }
+
+      renderProjects();
+      renderModals();
+    }
+
+    function toggleModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) modal.classList.toggle('hidden');
+    }
+
+    function handleBackdropClick(event, modalId) {
+      if (event.target.id === modalId) {
+        toggleModal(modalId);
+      }
+    }
+
+    // Close any open modal with Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      document.querySelectorAll('[id^="modal-"]').forEach((m) => {
+        if (m.classList.contains('fixed') && !m.classList.contains('hidden')) m.classList.add('hidden');
+      });
+    });
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const msg = document.getElementById('toast-message');
+      if (!toast || !msg) return;
+
+      msg.textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+
+    async function copyToClipboard(text, successMsg) {
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const el = document.createElement('textarea');
+          el.value = text;
+          el.setAttribute('readonly', '');
+          el.style.position = 'absolute';
+          el.style.left = '-9999px';
+          document.body.appendChild(el);
+          el.select();
+          document.execCommand('copy');
+          document.body.removeChild(el);
+        }
+        showToast(successMsg);
+      } catch (err) {
+        showToast('Copy failed');
+      }
+    }
+
+    function copyCardUrl() {
+      copyToClipboard(
+        window.location.href,
+        currentLang === 'ja' ? 'プロフィールURLをコピーしました' : 'Profile URL copied'
+      );
+    }
+
+    function downloadVCard() {
+      const vcardData = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'N;CHARSET=UTF-8:山本;ウェイン海人;;;',
+        'FN;CHARSET=UTF-8:山本 ウェイン海人 (Wayne Kaito Yamamoto)',
+        'ORG;CHARSET=UTF-8:湯沢町役場;湯沢町 地域おこし協力隊（起業型）',
+        'TITLE;CHARSET=UTF-8:Municipal & Tourism DX',
+        'TEL;TYPE=CELL,VOICE:+81-80-4721-7059',
+        'EMAIL;TYPE=INTERNET:yamawayne4@gmail.com',
+        'URL:https://github.com/umiwumi',
+        'ADR;TYPE=WORK;CHARSET=UTF-8:;;3000 Kandatsu (Yuzawa Town Hall);Yuzawa-machi, Minamiuonuma-gun;Niigata;949-6192;Japan',
+        'END:VCARD'
+      ].join('\r\n') + '\r\n';
+
+      const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const tempLink = document.createElement('a');
+      tempLink.href = url;
+      tempLink.setAttribute('download', 'Wayne_Kaito_Yamamoto.vcf');
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
+      setTimeout(() => URL.revokeObjectURL(url), 1000); // revoking instantly can cancel the download on iOS Safari
+
+      showToast(currentLang === 'ja' ? '連絡先 (.vcf) を保存しました' : 'Contact (.vcf) downloaded');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+      setLanguage('ja');
+    });
+  </script>
+</body>
+</html>
