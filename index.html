@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>山本 ウェイン海人 | Wayne Kaito Yamamoto — Yuzawa Tourism DX Hub</title>
-  <meta name="description" content="Yuzawa Town Regional Revitalization Cooperation Corps (Entrepreneurship Division) - Tourism DX, Inbound Systems, and Public Tools." />
+  <title>山本 ウェイン海人 | Wayne Kaito Yamamoto — Yuzawa Town DX Hub</title>
+  <meta name="description" content="Yuzawa Town Hall / Regional Revitalization Cooperation Corps (Entrepreneurship Division) - Municipal & Tourism DX, Inbound Systems, and Public Transit Tools." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -66,7 +66,7 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .glass-dark-elevated {
-      background: rgba(23, 32, 66, 0.84);
+      background: rgba(23, 32, 66, 0.86);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -113,7 +113,7 @@
             <span id="nav-org-badge" class="text-[9px] px-1.5 py-0.5 font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 rounded">起業型</span>
           </p>
           <p id="nav-org-sub" class="text-[10px] text-slate-400 font-medium mt-0.5">
-            一般社団法人 雪国観光まちづくり公社 拠点
+            新潟県 湯沢町役場
           </p>
         </div>
       </div>
@@ -147,7 +147,7 @@
           <span id="badge-gov-text">Yuzawa Town DX Initiative / 湯沢町 地域おこし協力隊</span>
         </span>
         <span id="badge-base" class="inline-flex items-center text-[10px] font-medium px-2.5 py-0.5 rounded-full bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
-          📍 越後湯沢駅西口 観光協会 拠点
+          📍 新潟県湯沢町役場
         </span>
       </div>
 
@@ -163,15 +163,15 @@
         </div>
 
         <p id="profile-affiliation" class="text-xs font-semibold text-slate-200">
-          湯沢町 地域おこし協力隊（起業型） / 一般社団法人 雪国観光まちづくり公社
+          湯沢町役場 / 湯沢町 地域おこし協力隊（起業型）
         </p>
 
         <p id="profile-headline" class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-emerald-300 to-amber-300">
-          Tourism DX • Inbound Systems • Digital Public Transit • Regional Specialty Assets
+          Municipal &amp; Tourism DX • Inbound Systems • Digital Public Transit • Regional Specialty Assets
         </p>
 
         <p id="profile-desc" class="text-xs text-slate-300 leading-relaxed pt-2.5 border-t border-white/10">
-          越後湯沢駅（雪国観光協会 拠点）をハブに、冬季シャトル・広域公共交通のデジタル案内基盤、窓口事前案内システム、および地域特産品・酒蔵データの多言語パイプラインを設計・社会実装しています。
+          湯沢町役場を拠点に、町内の公共交通・冬季シャトルのデジタル案内基盤（transit-digitization）、インバウンド向け多言語サービス事前案内ボード（services）、および地域特産品・酒蔵データの多言語パイプラインを設計・社会実装しています。
         </p>
       </div>
 
@@ -185,7 +185,7 @@
           <span id="btn-save-contact">連絡先を保存 (.vcf)</span>
         </button>
 
-        <!-- Secondary Action Row: Email & GitHub (Strictly No LinkedIn) -->
+        <!-- Secondary Action Row: Email, GitHub, Share -->
         <div class="grid grid-cols-3 gap-2">
           <a href="mailto:yamawayne4@gmail.com" class="touch-target focus-ring flex items-center justify-center space-x-1.5 bg-white/10 hover:bg-white/15 active:scale-95 text-white border border-white/15 rounded-xl text-xs font-semibold py-2.5 px-3 transition-all duration-200">
             <svg class="w-4 h-4 text-cyan-300 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -233,7 +233,7 @@
           <span class="w-6 h-6 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center mr-2 border border-emerald-500/30">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
           </span>
-          Phone
+          <span id="chip-label-phone">Phone</span>
         </span>
         <a href="tel:+818047217059" class="font-mono text-emerald-300 hover:text-emerald-200 font-semibold transition-colors">
           +81-80-4721-7059
@@ -253,17 +253,17 @@
         </a>
       </div>
 
-      <!-- Station Base -->
+      <!-- Office / Yuzawa Town Hall Base -->
       <div class="flex items-start justify-between py-1">
         <span class="text-slate-400 font-medium flex items-center shrink-0 mt-0.5">
           <span class="w-6 h-6 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center mr-2 border border-purple-500/30">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
           </span>
-          Station Base
+          <span id="chip-label-office">Office</span>
         </span>
         <span id="label-address" class="text-right text-slate-300 leading-tight">
-          新潟県南魚沼郡湯沢町湯沢2431-1<br />
-          <span class="text-[10px] text-slate-400">（JR越後湯沢駅西口 雪国観光協会 拠点）</span>
+          〒949-6192 新潟県南魚沼郡湯沢町大字神立3000番地<br />
+          <span class="text-[10px] text-slate-400">（湯沢町役場）</span>
         </span>
       </div>
     </section>
@@ -293,30 +293,30 @@
         </h2>
       </div>
 
-      <!-- 4-Domain Grid -->
+      <!-- 4-Domain Grid (Dynamically Translated) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
         <div class="p-3 rounded-xl bg-twilight-900/70 border border-white/10">
-          <h3 class="text-[11px] font-bold text-cyan-300 uppercase tracking-wide">Full-Stack Web</h3>
-          <p class="mt-1 text-[11px] text-slate-300 leading-relaxed">
-            TypeScript, Python, REST APIs, mobile-first bilingual UI engineering.
+          <h3 id="comp-1-title" class="text-[11px] font-bold text-cyan-300 uppercase tracking-wide">Full-Stack Web</h3>
+          <p id="comp-1-desc" class="mt-1 text-[11px] text-slate-300 leading-relaxed">
+            TypeScript, Python, REST API設計、モバイルファーストの多言語UIエンジニアリング。
           </p>
         </div>
         <div class="p-3 rounded-xl bg-twilight-900/70 border border-white/10">
-          <h3 class="text-[11px] font-bold text-emerald-300 uppercase tracking-wide">Tourism DX Architecture</h3>
-          <p class="mt-1 text-[11px] text-slate-300 leading-relaxed">
-            Inbound visitor hubs, pre-consultation portals, transit schedule systems.
+          <h3 id="comp-2-title" class="text-[11px] font-bold text-emerald-300 uppercase tracking-wide">Municipal &amp; Tourism DX</h3>
+          <p id="comp-2-desc" class="mt-1 text-[11px] text-slate-300 leading-relaxed">
+            公共交通・シャトル案内基盤、インバウンド事前案内ポータル、地域課題解決型システム。
           </p>
         </div>
         <div class="p-3 rounded-xl bg-twilight-900/70 border border-white/10">
-          <h3 class="text-[11px] font-bold text-amber-300 uppercase tracking-wide">Edge Computing</h3>
-          <p class="mt-1 text-[11px] text-slate-300 leading-relaxed">
-            QR-triggered micro-portals, resilient static apps, local AI workflows.
+          <h3 id="comp-3-title" class="text-[11px] font-bold text-amber-300 uppercase tracking-wide">Edge &amp; QR Micro-Portals</h3>
+          <p id="comp-3-desc" class="mt-1 text-[11px] text-slate-300 leading-relaxed">
+            QRコード連動マイクロポータル、高可用性静的Webアプリ、生成AI活用ワークフロー。
           </p>
         </div>
         <div class="p-3 rounded-xl bg-twilight-900/70 border border-white/10">
-          <h3 class="text-[11px] font-bold text-purple-300 uppercase tracking-wide">Systems Integration</h3>
-          <p class="mt-1 text-[11px] text-slate-300 leading-relaxed">
-            Regional specialty asset registries, producer &amp; sake brewery schemas.
+          <h3 id="comp-4-title" class="text-[11px] font-bold text-purple-300 uppercase tracking-wide">Systems Integration</h3>
+          <p id="comp-4-desc" class="mt-1 text-[11px] text-slate-300 leading-relaxed">
+            地域特産品・生産者・酒蔵データのスキーマ標準化と多言語POP自動生成パイプライン。
           </p>
         </div>
       </div>
@@ -329,10 +329,10 @@
           </svg>
         </div>
         <div>
-          <p class="text-xs font-bold text-white">
+          <p id="cert-title" class="text-xs font-bold text-white">
             Applied Generative AI (Certificate Program)
           </p>
-          <p class="text-[11px] text-amber-200/80 mt-0.5">
+          <p id="cert-sub" class="text-[11px] text-amber-200/80 mt-0.5">
             Johns Hopkins University / Great Learning
           </p>
         </div>
@@ -353,7 +353,7 @@
       </div>
 
       <p id="box-pitch-body" class="text-xs text-slate-300 leading-relaxed relative z-10">
-        自社商品のインバウンド向け多言語POP作成、QRコード案内システム、店頭導線改善など、現場でテスト導入できる協力事業者様を募集しています。観光協会カウンターまたはメールにてお気軽にご相談ください。
+        自社商品のインバウンド向け多言語POP作成、QRコード案内システム、公共交通・シャトル案内連携など、現場でテスト導入できる町内協力事業者様を募集しています。湯沢町役場またはメールにてお気軽にご相談ください。
       </p>
 
       <div class="pt-3.5 relative z-10">
@@ -366,14 +366,14 @@
     <!-- 4. FOOTER -->
     <footer class="text-center pt-2 pb-4 text-[11px] text-slate-400 space-y-1.5">
       <p id="footer-text" class="font-medium text-slate-300">
-        湯沢町 地域おこし協力隊（起業型） • 一般社団法人 雪国観光まちづくり公社
+        湯沢町役場 • 湯沢町 地域おこし協力隊（起業型）
       </p>
       <p class="font-mono text-slate-400">
         &copy; <span id="current-year">2026</span> Wayne Kaito Yamamoto (山本 ウェイン海人)
       </p>
-      <div class="pt-1">
+      <div class="pt-1 flex items-center justify-center gap-4">
         <a href="https://github.com/umiwumi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-cyan-300 hover:text-amber-300 font-mono text-[11px] underline underline-offset-4 transition-colors">
-          <span>https://github.com/umiwumi</span>
+          <span>github.com/umiwumi</span>
           <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
           </svg>
@@ -405,83 +405,56 @@
 
   <!-- ================= MODALS & INTERACTIVE PREVIEWS ================= -->
 
-  <!-- MODAL 1: TRANSIT & SHUTTLE GUIDE (Winter_Shuttle_Schedule) -->
-  <div id="modal-transit" class="fixed inset-0 z-50 bg-twilight-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+  <!-- MODAL 1: TRANSIT DIGITIZATION PORTAL (https://umiwumi.github.io/transit-digitization/#public) -->
+  <div id="modal-transit" onclick="handleBackdropClick(event, 'modal-transit')" class="fixed inset-0 z-50 bg-twilight-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
     <div class="glass-dark-elevated rounded-3xl max-w-sm w-full p-5 shadow-2xl space-y-4 max-h-[92vh] overflow-y-auto border border-cyan-500/30">
       <div class="flex items-center justify-between border-b border-white/10 pb-3">
         <div>
-          <span class="text-[10px] font-bold uppercase text-cyan-400 tracking-wider">Winter_Shuttle_Schedule</span>
-          <h4 class="text-sm font-bold text-white">越後湯沢駅 冬季バス・シャトル案内</h4>
+          <span class="text-[10px] font-bold uppercase text-cyan-400 tracking-wider font-mono">transit-digitization/#public</span>
+          <h4 id="modal-transit-title" class="text-sm font-bold text-white">湯沢町 公共交通・シャトルデジタル案内</h4>
         </div>
-        <button onclick="toggleModal('modal-transit')" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors">
+        <button onclick="toggleModal('modal-transit')" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors" aria-label="Close modal">
           ✕
         </button>
       </div>
 
-      <div class="space-y-2.5 text-xs text-slate-200">
-        <div class="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/30">
-          <p class="font-bold text-cyan-300 text-xs mb-1">🚏 東口（East Exit Bays）</p>
-          <ul class="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
-            <li><strong>のりば 1:</strong> 苗場・かぐら・みつまた方面 急行バス</li>
-            <li><strong>のりば 2:</strong> 大源太・旭原方面 路線バス</li>
-            <li><strong>のりば 3:</strong> 六日町・十日町方面 南越後観光バス</li>
-          </ul>
-        </div>
-
-        <div class="p-3 rounded-xl bg-blue-950/40 border border-blue-500/30">
-          <p class="font-bold text-blue-300 text-xs mb-1">🚏 西口（West Exit Shuttles）</p>
-          <ul class="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
-            <li>各スキー場シャトル（GALA・NASPA・岩原・神立）</li>
-            <li>温泉街周遊・宿泊施設送迎スペース</li>
-          </ul>
-        </div>
+      <div id="modal-transit-body" class="space-y-2.5 text-xs text-slate-200">
+        <!-- Populated dynamically via renderModals() -->
       </div>
 
       <div class="flex gap-2 pt-1">
-        <a href="./Winter_Shuttle_Schedule/" class="flex-1 text-center bg-gradient-to-r from-cyan-400 to-blue-500 text-twilight-950 font-bold py-2.5 rounded-xl text-xs shadow-glow-cyan">
-          システムを開く ↗
+        <a id="modal-transit-launch" href="https://umiwumi.github.io/transit-digitization/#public" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-twilight-950 font-bold py-2.5 rounded-xl text-xs shadow-glow-cyan transition-all">
+          公開ポータルを開く ↗
         </a>
-        <button onclick="toggleModal('modal-transit')" class="px-4 bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
+        <button id="modal-transit-close" onclick="toggleModal('modal-transit')" class="px-4 bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
           閉じる
         </button>
       </div>
     </div>
   </div>
 
-  <!-- MODAL 2: FRONT-DESK DIGITAL HUB (services.html) -->
-  <div id="modal-baggage" class="fixed inset-0 z-50 bg-twilight-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+  <!-- MODAL 2: MULTILINGUAL VISITOR & SERVICES HUB (https://umiwumi.github.io/services/?lang=en) -->
+  <div id="modal-baggage" onclick="handleBackdropClick(event, 'modal-baggage')" class="fixed inset-0 z-50 bg-twilight-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
     <div class="glass-dark-elevated rounded-3xl max-w-sm w-full p-5 shadow-2xl space-y-4 max-h-[92vh] overflow-y-auto border border-emerald-500/30">
       <div class="flex items-center justify-between border-b border-white/10 pb-3">
         <div>
-          <span class="text-[10px] font-bold uppercase text-emerald-400 tracking-wider">services.html • Visitor Hub</span>
-          <h4 class="text-sm font-bold text-white">窓口デジタル事前案内・手荷物導線</h4>
+          <span class="text-[10px] font-bold uppercase text-emerald-400 tracking-wider font-mono">umiwumi.github.io/services</span>
+          <h4 id="modal-baggage-title" class="text-sm font-bold text-white">多言語インバウンド・サービス事前案内ボード</h4>
         </div>
-        <button onclick="toggleModal('modal-baggage')" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors">
+        <button onclick="toggleModal('modal-baggage')" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors" aria-label="Close modal">
           ✕
         </button>
       </div>
 
-      <div class="space-y-2.5 text-xs text-slate-200">
-        <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30">
-          <p class="font-bold text-emerald-300 text-xs mb-1">🧳 手荷物一時預かり・宿当日配送</p>
-          <p class="text-[11px] text-slate-300 leading-relaxed">
-            越後湯沢駅西口 観光協会拠点での一時預かり、町内旅館・ホテルへの当日配送受付、受付締切時刻を多言語で事前案内し窓口混雑を緩和します。
-          </p>
-        </div>
-
-        <div class="p-3 rounded-xl bg-slate-900/60 border border-white/10">
-          <p class="font-bold text-slate-200 text-xs mb-1">🎿 大型ロッカー・周辺案内</p>
-          <p class="text-[11px] text-slate-300 leading-relaxed">
-            スキー・スノーボード対応ロッカー導線と日帰り温泉マップへのQR即時遷移を提供します。
-          </p>
-        </div>
+      <div id="modal-baggage-body" class="space-y-2.5 text-xs text-slate-200">
+        <!-- Populated dynamically via renderModals() -->
       </div>
 
       <div class="flex gap-2 pt-1">
-        <a href="./services.html" class="flex-1 text-center bg-gradient-to-r from-emerald-400 to-teal-500 text-twilight-950 font-bold py-2.5 rounded-xl text-xs shadow-glow-emerald">
-          services.html を開く ↗
+        <a id="modal-baggage-launch" href="https://umiwumi.github.io/services/?lang=en" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-twilight-950 font-bold py-2.5 rounded-xl text-xs shadow-glow-emerald transition-all">
+          サービス案内を開く ↗
         </a>
-        <button onclick="toggleModal('modal-baggage')" class="px-4 bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
+        <button id="modal-baggage-close" onclick="toggleModal('modal-baggage')" class="px-4 bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
           閉じる
         </button>
       </div>
@@ -489,48 +462,27 @@
   </div>
 
   <!-- MODAL 3: REGIONAL SPECIALTY ASSET REGISTRY (A7 Schema) -->
-  <div id="modal-soba" class="fixed inset-0 z-50 bg-twilight-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+  <div id="modal-soba" onclick="handleBackdropClick(event, 'modal-soba')" class="fixed inset-0 z-50 bg-twilight-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
     <div class="glass-dark-elevated rounded-3xl max-w-sm w-full p-5 shadow-2xl space-y-4 max-h-[92vh] overflow-y-auto border border-amber-500/30">
       <div class="flex items-center justify-between border-b border-white/10 pb-3">
         <div>
-          <span class="text-[10px] font-bold uppercase text-amber-400 tracking-wider">Regional Asset Schema</span>
-          <h4 class="text-sm font-bold text-white">地域特産品・酒蔵データ標準化モデル</h4>
+          <span class="text-[10px] font-bold uppercase text-amber-400 tracking-wider font-mono">Regional Asset Schema</span>
+          <h4 id="modal-soba-title" class="text-sm font-bold text-white">地域特産品・酒蔵データ標準化モデル</h4>
         </div>
-        <button onclick="toggleModal('modal-soba')" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors">
+        <button onclick="toggleModal('modal-soba')" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors" aria-label="Close modal">
           ✕
         </button>
       </div>
 
-      <div class="border-2 border-dashed border-amber-500/50 rounded-2xl p-4 bg-twilight-900/90 text-[11px] leading-tight space-y-2.5">
-        <div class="border-b border-white/10 pb-2 flex justify-between items-baseline">
-          <div>
-            <p class="text-[9px] font-bold text-amber-400 uppercase tracking-widest">Yuzawa Specialty Registry</p>
-            <p class="font-bold text-white text-xs">SNOW-AGED SOBA &amp; LOCAL SAKE</p>
-          </div>
-          <span class="text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 px-1.5 py-0.5 rounded">REST / POP</span>
-        </div>
-
-        <div class="space-y-2 text-slate-200">
-          <div>
-            <p class="font-bold text-cyan-300 text-[10px]">🌾 PRODUCER &amp; CRAFT</p>
-            <p class="text-[10px] text-slate-300 mt-0.5">Structured metadata for snow-vault (Yukimuro) aged buckwheat and regional Niigata sake breweries.</p>
-          </div>
-          <div>
-            <p class="font-bold text-emerald-300 text-[10px]">🍳 MULTILINGUAL PAYLOAD</p>
-            <p class="text-[10px] text-slate-300 mt-0.5">Standardized JSON/REST fields for tasting notes, preparation steps, and pairing recommendations.</p>
-          </div>
-          <div>
-            <p class="font-bold text-amber-300 text-[10px]">✈️ COMPLIANCE &amp; ALLERGENS</p>
-            <p class="text-[10px] text-slate-300 mt-0.5">Clear duty-free/luggage eligibility and high-contrast buckwheat/allergen safety flags.</p>
-          </div>
-        </div>
+      <div id="modal-soba-body" class="border-2 border-dashed border-amber-500/50 rounded-2xl p-4 bg-twilight-900/90 text-[11px] leading-tight space-y-2.5">
+        <!-- Populated dynamically via renderModals() -->
       </div>
 
       <div class="flex gap-2 pt-1">
-        <a href="https://github.com/umiwumi" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-gradient-to-r from-amber-400 to-orange-500 text-twilight-950 font-bold py-2.5 rounded-xl text-xs shadow-glow-amber">
+        <a id="modal-soba-launch" href="https://github.com/umiwumi" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-twilight-950 font-bold py-2.5 rounded-xl text-xs shadow-glow-amber transition-all">
           GitHub リポジトリ ↗
         </a>
-        <button onclick="toggleModal('modal-soba')" class="px-4 bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
+        <button id="modal-soba-close" onclick="toggleModal('modal-soba')" class="px-4 bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
           閉じる
         </button>
       </div>
@@ -547,121 +499,291 @@
   <script>
     let currentLang = 'ja';
 
-    // Data-Driven Projects Array (Supports Bilingual Switching + Modal & Direct URLs)
+    // Data-Driven Projects Array with Live GitHub Pages Links
     const dxProjects = [
       {
         id: 'transit',
         title: {
-          ja: 'Winter Transit & Shuttle Guide (冬季シャトル・地域路線案内)',
-          en: 'Winter Transit & Shuttle Guide (Winter_Shuttle_Schedule)'
+          ja: '湯沢町 公共交通・シャトルデジタル案内 (Transit Digitization Portal)',
+          en: 'Yuzawa Public Transit & Shuttle Portal (transit-digitization)'
         },
         status: 'Live',
         statusColor: 'cyan',
-        category: 'Winter_Shuttle_Schedule',
+        category: 'transit-digitization',
         description: {
-          ja: '越後湯沢駅発着の冬季スキー場シャトルバスおよび南越後観光バス路線を統合。のりば番号・時刻表を直感的に検索できるモバイル案内基盤。',
-          en: 'Digital shuttle and local route tracking (`Winter_Shuttle_Schedule`) uniting resort shuttles and regional bus bays for mobile commuters.'
+          ja: '越後湯沢駅発着の路線バス・スキー場シャトルバスの時刻表、のりば案内、運行ルートを統合した公開デジタル交通ポータル。',
+          en: 'Unified public transit and winter shuttle portal (#public) providing real-time route navigation, bay maps, and bilingual timetables across Yuzawa Town.'
         },
-        url: './Winter_Shuttle_Schedule/',
+        url: {
+          ja: 'https://umiwumi.github.io/transit-digitization/#public',
+          en: 'https://umiwumi.github.io/transit-digitization/#public'
+        },
         modalId: 'modal-transit',
         ctaText: {
-          ja: '路線デモ・詳細を見る',
+          ja: 'システム仕様・詳細を見る',
           en: 'Inspect Transit System'
         },
-        tags: ['HTML5', 'Transit', 'Mobile UI']
+        launchLabel: {
+          ja: '公開サイト ↗',
+          en: 'Launch ↗'
+        },
+        tags: ['Transit DX', 'Bilingual UI', 'Live Portal']
       },
       {
         id: 'hub',
         title: {
-          ja: 'Front-Desk Digital Information Hub (窓口デジタル事前案内ボード)',
-          en: 'Front-Desk Digital Information Hub (services.html)'
+          ja: '多言語インバウンド・サービス事前案内ボード (Digital Services Guide)',
+          en: 'Multilingual Visitor & Services Digital Hub (services)'
         },
         status: 'Deployed',
         statusColor: 'emerald',
-        category: 'services.html',
+        category: 'services',
         description: {
-          ja: '雪国観光協会カウンターでの手荷物預かり・宿当日配送・大型ロッカー導線を多言語化（services.html）。窓口の言語負担と滞留を低減。',
-          en: 'Pre-consultation tourist information board (`services.html`) streamlining luggage forwarding, locker routing, and counter inquiries.'
+          ja: '手荷物一時預かり・宿への当日配送・大型コインロッカー・周辺施設案内を多言語で即時案内するQR連動型デジタルガイド。',
+          en: 'Interactive multilingual service guide (?lang=en) streamlining luggage storage, hotel forwarding, locker routing, and visitor inquiries.'
         },
-        url: './services.html',
+        url: {
+          ja: 'https://umiwumi.github.io/services/?lang=en',
+          en: 'https://umiwumi.github.io/services/?lang=en'
+        },
         modalId: 'modal-baggage',
         ctaText: {
-          ja: '窓口ガイド仕様を見る',
-          en: 'Inspect Visitor Hub'
+          ja: 'サービス案内仕様を見る',
+          en: 'Inspect Services Hub'
         },
-        tags: ['UX', 'Micro-Portal', 'Bilingual UI']
+        launchLabel: {
+          ja: '公開サイト ↗',
+          en: 'Launch ↗'
+        },
+        tags: ['Inbound UX', 'QR Micro-Portal', 'Multilingual']
       },
       {
         id: 'registry',
         title: {
-          ja: 'Regional Specialty Asset Registry (地域特産品・酒蔵データ基盤)',
+          ja: '地域特産品・酒蔵データ標準化基盤 (Regional Specialty Asset Registry)',
           en: 'Regional Specialty Asset Registry (Producers & Breweries)'
         },
         status: 'In Development',
         statusColor: 'amber',
         category: 'API / Schema',
         description: {
-          ja: '大源太雪室そば・地酒・地域特産品のアレルギー表記・調理法・免税情報を構造化し、店頭A7 POPとQRページへ一元配信するデータ統合基盤。',
-          en: 'Local producer and sake brewery data integration resolving allergen, preparation, and duty-free questions via unified schemas.'
+          ja: '町内特産品・雪室そば・地酒のアレルギー表示、調理法、免税情報を構造化し、多言語POPおよびQRマイクロページへ一元配信するデータ基盤。',
+          en: 'Structured data pipeline for local producers and sake breweries resolving allergen safety, preparation steps, and duty-free compliance via QR & A7 POPs.'
         },
-        url: 'https://github.com/umiwumi',
+        url: {
+          ja: 'https://github.com/umiwumi',
+          en: 'https://github.com/umiwumi'
+        },
         modalId: 'modal-soba',
         ctaText: {
           ja: 'POPスキーマ・仕様を見る',
           en: 'Inspect Asset Schema'
         },
-        tags: ['Python', 'REST API', 'Database']
+        launchLabel: {
+          ja: 'GitHub ↗',
+          en: 'GitHub ↗'
+        },
+        tags: ['Python', 'Data Schema', 'A7 Retail POP']
       }
     ];
 
+    // Full Bilingual Dictionary (Strictly Yuzawa Town Hall Affiliation)
     const content = {
       ja: {
         navOrgMain: '湯沢町 地域おこし協力隊',
         navOrgBadge: '起業型',
-        navOrgSub: '一般社団法人 雪国観光まちづくり公社 拠点',
+        navOrgSub: '新潟県 湯沢町役場',
         badgeGov: 'Yuzawa Town DX Initiative / 湯沢町 地域おこし協力隊',
-        badgeBase: '📍 越後湯沢駅西口 観光協会 拠点',
+        badgeBase: '📍 新潟県湯沢町役場',
         profileName: '山本 ウェイン海人',
         profileRoleSub: 'Wayne Kaito Yamamoto',
-        profileAffiliation: '湯沢町 地域おこし協力隊（起業型） / 一般社団法人 雪国観光まちづくり公社',
-        profileHeadline: 'Tourism DX • Inbound Systems • Digital Public Transit • Regional Specialty Assets',
-        profileDesc: '越後湯沢駅（雪国観光協会 拠点）をハブに、冬季シャトル・広域公共交通のデジタル案内基盤、窓口事前案内システム、および地域特産品・酒蔵データの多言語パイプラインを設計・社会実装しています。',
+        profileAffiliation: '湯沢町役場 / 湯沢町 地域おこし協力隊（起業型）',
+        profileHeadline: 'Municipal & Tourism DX • Inbound Systems • Digital Public Transit • Regional Specialty Assets',
+        profileDesc: '湯沢町役場を拠点に、町内の公共交通・冬季シャトルのデジタル案内基盤（transit-digitization）、インバウンド向け多言語サービス事前案内ボード（services）、および地域特産品・酒蔵データの多言語パイプラインを設計・社会実装しています。',
         btnSaveContact: '連絡先を保存 (.vcf)',
         btnShareLink: '共有',
-        labelAddress: '新潟県南魚沼郡湯沢町湯沢2431-1<br><span class="text-[10px] text-slate-400">（JR越後湯沢駅西口 雪国観光協会 拠点）</span>',
+        chipLabelPhone: 'Phone / 電話',
+        chipLabelOffice: 'Office / 所属先',
+        labelAddress: '〒949-6192 新潟県南魚沼郡湯沢町大字神立3000番地<br><span class="text-[10px] text-slate-400">（湯沢町役場）</span>',
         headingDeployments: 'Live Systems & Public Tools / 公開システム',
         headingCompetencies: 'Core Competencies & Credentials / 専門領域',
+        comp1Title: 'Full-Stack Web',
+        comp1Desc: 'TypeScript, Python, REST API設計、モバイルファーストの多言語UIエンジニアリング。',
+        comp2Title: 'Municipal & Tourism DX',
+        comp2Desc: '公共交通・シャトル案内基盤、インバウンド事前案内ポータル、地域課題解決型システム。',
+        comp3Title: 'Edge & QR Micro-Portals',
+        comp3Desc: 'QRコード連動マイクロポータル、高可用性静的Webアプリ、生成AI活用ワークフロー。',
+        comp4Title: 'Systems Integration',
+        comp4Desc: '地域特産品・生産者・酒蔵データのスキーマ標準化と多言語POP自動生成パイプライン。',
+        certTitle: 'Applied Generative AI (Certificate Program)',
+        certSub: 'Johns Hopkins University / Great Learning',
         boxPitchTitle: '町内事業者・酒蔵・宿泊施設のみなさまへ',
-        boxPitchBody: '自社商品のインバウンド向け多言語POP作成、QRコード案内システム、店頭導線改善など、現場でテスト導入できる協力事業者様を募集しています。観光協会カウンターまたはメールにてお気軽にご相談ください。',
+        boxPitchBody: '自社商品のインバウンド向け多言語POP作成、QRコード案内システム、公共交通・シャトル案内連携など、現場でテスト導入できる町内協力事業者様を募集しています。湯沢町役場またはメールにてお気軽にご相談ください。',
         btnInquiry: '実証実験・DX導入について相談する',
-        footerText: '湯沢町 地域おこし協力隊（起業型） • 一般社団法人 雪国観光まちづくり公社',
+        footerText: '湯沢町役場 • 湯沢町 地域おこし協力隊（起業型）',
         tabCall: '通話発信',
         tabEmail: 'メール',
-        tabVcard: '連絡先保存'
+        tabVcard: '連絡先保存',
+        // Modal Translations
+        modalClose: '閉じる',
+        modalTransitTitle: '湯沢町 公共交通・シャトルデジタル案内',
+        modalTransitLaunch: '公開ポータルを開く ↗',
+        modalTransitHtml: `
+          <div class="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/30">
+            <p class="font-bold text-cyan-300 text-xs mb-1">🚏 路線バス・東口バスのりば案内</p>
+            <ul class="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
+              <li><strong>のりば 1:</strong> 苗場・かぐら・みつまた方面 急行・路線バス</li>
+              <li><strong>のりば 2:</strong> 大源太・旭原方面 地域路線バス</li>
+              <li><strong>のりば 3:</strong> 六日町・十日町方面 広域路線バス</li>
+            </ul>
+          </div>
+          <div class="p-3 rounded-xl bg-blue-950/40 border border-blue-500/30">
+            <p class="font-bold text-blue-300 text-xs mb-1">🚌 冬季シャトル・広域モビリティ統合 (#public)</p>
+            <ul class="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
+              <li>町内スキー場シャトルバスの発着時刻・のりばマップを一元化</li>
+              <li>日英バイリンガルUIでインバウンド旅行者の乗換迷子を解消</li>
+            </ul>
+          </div>
+        `,
+        modalBaggageTitle: '多言語インバウンド・サービス事前案内ボード',
+        modalBaggageLaunch: 'サービス案内を開く ↗',
+        modalBaggageHtml: `
+          <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30">
+            <p class="font-bold text-emerald-300 text-xs mb-1">🧳 手荷物一時預かり・宿当日配送ガイド</p>
+            <p class="text-[11px] text-slate-300 leading-relaxed">
+              手荷物の一時預かり料金、町内宿泊施設への当日配送受付、および受付締切時刻を英語・日本語で視覚的に事前案内し、案内カウンターの混雑とコミュニケーション負荷を軽減します。
+            </p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/10">
+            <p class="font-bold text-slate-200 text-xs mb-1">🎿 大型コインロッカー・周辺導線案内</p>
+            <p class="text-[11px] text-slate-300 leading-relaxed">
+              スキー・スノーボード対応ロッカーの設置場所や、タクシー・バス・周辺施設へのQR即時遷移を提供します。
+            </p>
+          </div>
+        `,
+        modalSobaTitle: '地域特産品・酒蔵データ標準化モデル',
+        modalSobaLaunch: 'GitHub リポジトリ ↗',
+        modalSobaHtml: `
+          <div class="border-b border-white/10 pb-2 flex justify-between items-baseline">
+            <div>
+              <p class="text-[9px] font-bold text-amber-400 uppercase tracking-widest">Yuzawa Specialty Registry</p>
+              <p class="font-bold text-white text-xs">雪室そば・地酒・特産品データ標準化</p>
+            </div>
+            <span class="text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 px-1.5 py-0.5 rounded">REST / A7 POP</span>
+          </div>
+          <div class="space-y-2 text-slate-200">
+            <div>
+              <p class="font-bold text-cyan-300 text-[10px]">🌾 生産者・酒蔵メタデータ (PRODUCER &amp; CRAFT)</p>
+              <p class="text-[10px] text-slate-300 mt-0.5">雪室熟成そばや南魚沼・湯沢エリアの酒蔵・特産品情報を統一JSONスキーマで管理。</p>
+            </div>
+            <div>
+              <p class="font-bold text-emerald-300 text-[10px]">🍳 多言語調理法・ペアリング (MULTILINGUAL PAYLOAD)</p>
+              <p class="text-[10px] text-slate-300 mt-0.5">茹で時間や美味しい召し上がり方、地酒の味わいチャートを多言語で自動出力。</p>
+            </div>
+            <div>
+              <p class="font-bold text-amber-300 text-[10px]">✈️ アレルギー・免税・持込規定 (COMPLIANCE)</p>
+              <p class="text-[10px] text-slate-300 mt-0.5">そば等の高視認性アレルゲン表示と、国際線液体物・免税ルールを明快に提示。</p>
+            </div>
+          </div>
+        `
       },
       en: {
         navOrgMain: 'Yuzawa Town Revitalization Corps',
         navOrgBadge: 'Entrepreneurship',
-        navOrgSub: 'Snow Country Tourism Association Hub',
+        navOrgSub: 'Yuzawa Town Hall, Niigata',
         badgeGov: 'Yuzawa Town DX Initiative / Regional Revitalization',
-        badgeBase: '📍 Echigo-Yuzawa Station West Exit Hub',
+        badgeBase: '📍 Yuzawa Town Hall, Niigata',
         profileName: 'Wayne Kaito Yamamoto',
         profileRoleSub: '山本 ウェイン海人',
-        profileAffiliation: 'Yuzawa Town Regional Revitalization Cooperation Corps (Entrepreneurship Division) / Snow Country Tourism Association',
-        profileHeadline: 'Tourism DX • Inbound Systems • Digital Public Transit • Regional Specialty Assets',
-        profileDesc: 'Stationed at the Snow Country Tourism Association (Echigo-Yuzawa Station). Engineering digital transit guides, front-desk visitor micro-portals, and bilingual specialty asset registries.',
+        profileAffiliation: 'Yuzawa Town Hall / Regional Revitalization Cooperation Corps (Entrepreneurship Division)',
+        profileHeadline: 'Municipal & Tourism DX • Inbound Systems • Digital Public Transit • Regional Specialty Assets',
+        profileDesc: 'Based at Yuzawa Town Hall in Niigata, Japan. Engineering municipal & tourism DX systems including the Yuzawa Public Transit & Shuttle Portal (transit-digitization), Multilingual Visitor Services Hub (services), and regional specialty data pipelines.',
         btnSaveContact: 'Save Contact (.vcf)',
         btnShareLink: 'Share',
-        labelAddress: '2431-1 Yuzawa, Minamiuonuma, Niigata<br><span class="text-[10px] text-slate-400">(Echigo-Yuzawa Sta. West Exit Tourism Center)</span>',
+        chipLabelPhone: 'Phone',
+        chipLabelOffice: 'Office',
+        labelAddress: '3000 Kandatsu, Yuzawa-machi, Minamiuonuma-gun, Niigata 949-6192<br><span class="text-[10px] text-slate-400">(Yuzawa Town Hall)</span>',
         headingDeployments: 'Live Systems & Public Tools',
         headingCompetencies: 'Core Competencies & Credentials',
-        boxPitchTitle: 'For Regional Producers, Breweries & Ryokan',
-        boxPitchBody: 'Deploying bilingual product schemas, QR micro-portals, and transit signposting across Yuzawa Town. Reach out via email or at the station tourism desk to collaborate.',
+        comp1Title: 'Full-Stack Web',
+        comp1Desc: 'TypeScript, Python, REST APIs, and mobile-first bilingual UI engineering.',
+        comp2Title: 'Municipal & Tourism DX',
+        comp2Desc: 'Public transit digitization, pre-consultation visitor hubs, and regional civic tech.',
+        comp3Title: 'Edge & QR Micro-Portals',
+        comp3Desc: 'QR-triggered micro-portals, resilient static web apps, and applied AI workflows.',
+        comp4Title: 'Systems Integration',
+        comp4Desc: 'Regional specialty asset registries, producer & sake brewery schemas, and A7 POP automation.',
+        certTitle: 'Applied Generative AI (Certificate Program)',
+        certSub: 'Johns Hopkins University / Great Learning',
+        boxPitchTitle: 'For Yuzawa Businesses, Breweries & Ryokan',
+        boxPitchBody: 'Deploying bilingual product schemas, QR micro-portals, and digital transit signposting across Yuzawa Town. Reach out via email or through Yuzawa Town Hall to collaborate on pilot implementations.',
         btnInquiry: 'Discuss Pilot Implementation',
-        footerText: 'Yuzawa Town Regional Revitalization Corps • Snow Country Tourism Association',
+        footerText: 'Yuzawa Town Hall • Regional Revitalization Cooperation Corps (Entrepreneurship Division)',
         tabCall: 'Call',
         tabEmail: 'Email',
-        tabVcard: 'Save vCard'
+        tabVcard: 'Save vCard',
+        // Modal Translations
+        modalClose: 'Close',
+        modalTransitTitle: 'Yuzawa Public Transit & Shuttle Portal',
+        modalTransitLaunch: 'Open Live Portal ↗',
+        modalTransitHtml: `
+          <div class="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/30">
+            <p class="font-bold text-cyan-300 text-xs mb-1">🚏 Regional Bus Bays &amp; Timetables</p>
+            <ul class="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
+              <li><strong>Bay 1:</strong> Express &amp; local buses to Naeba, Kagura &amp; Mitsumata</li>
+              <li><strong>Bay 2:</strong> Local routes serving Daigenta &amp; Asahibara</li>
+              <li><strong>Bay 3:</strong> Regional lines toward Muikamachi &amp; Tokamachi</li>
+            </ul>
+          </div>
+          <div class="p-3 rounded-xl bg-blue-950/40 border border-blue-500/30">
+            <p class="font-bold text-blue-300 text-xs mb-1">🚌 Unified Shuttle Navigation (#public)</p>
+            <ul class="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
+              <li>Consolidates ski resort shuttle schedules and boarding zones into one mobile interface</li>
+              <li>Eliminates wayfinding friction for international and domestic commuters</li>
+            </ul>
+          </div>
+        `,
+        modalBaggageTitle: 'Multilingual Visitor & Services Digital Hub',
+        modalBaggageLaunch: 'Open Services Hub ↗',
+        modalBaggageHtml: `
+          <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30">
+            <p class="font-bold text-emerald-300 text-xs mb-1">🧳 Luggage Storage &amp; Hotel Forwarding</p>
+            <p class="text-[11px] text-slate-300 leading-relaxed">
+              Pre-consultation digital guide (?lang=en) presenting storage rates, same-day hotel baggage delivery cutoffs, and size rules in clear bilingual cards to reduce counter congestion.
+            </p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/10">
+            <p class="font-bold text-slate-200 text-xs mb-1">🎿 Oversized Coin Lockers &amp; Local Routing</p>
+            <p class="text-[11px] text-slate-300 leading-relaxed">
+              Directs visitors to ski/snowboard-compatible lockers, local transit connections, and municipal facilities via instant QR access.
+            </p>
+          </div>
+        `,
+        modalSobaTitle: 'Regional Specialty Asset Registry',
+        modalSobaLaunch: 'View GitHub Repo ↗',
+        modalSobaHtml: `
+          <div class="border-b border-white/10 pb-2 flex justify-between items-baseline">
+            <div>
+              <p class="text-[9px] font-bold text-amber-400 uppercase tracking-widest">Yuzawa Specialty Registry</p>
+              <p class="font-bold text-white text-xs">SNOW-AGED SOBA &amp; LOCAL SAKE</p>
+            </div>
+            <span class="text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 px-1.5 py-0.5 rounded">REST / A7 POP</span>
+          </div>
+          <div class="space-y-2 text-slate-200">
+            <div>
+              <p class="font-bold text-cyan-300 text-[10px]">🌾 PRODUCER &amp; CRAFT METADATA</p>
+              <p class="text-[10px] text-slate-300 mt-0.5">Structured JSON schemas for snow-vault (Yukimuro) aged buckwheat and regional Niigata sake breweries.</p>
+            </div>
+            <div>
+              <p class="font-bold text-emerald-300 text-[10px]">🍳 MULTILINGUAL PAYLOAD</p>
+              <p class="text-[10px] text-slate-300 mt-0.5">Standardized fields for tasting notes, boiling/preparation steps, and pairing recommendations.</p>
+            </div>
+            <div>
+              <p class="font-bold text-amber-300 text-[10px]">✈️ COMPLIANCE &amp; ALLERGENS</p>
+              <p class="text-[10px] text-slate-300 mt-0.5">Clear duty-free/luggage eligibility and high-contrast buckwheat/allergen safety flags.</p>
+            </div>
+          </div>
+        `
       }
     };
 
@@ -689,183 +811,4 @@
           btn: 'text-amber-300 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:to-orange-500/30 border-amber-500/40 shadow-glow-amber'
         }
       };
-      return themes[color] || themes.cyan;
-    }
-
-    function renderProjects() {
-      const container = document.getElementById('project-list');
-      const countEl = document.getElementById('badge-status-count');
-      if (!container) return;
-
-      if (countEl) {
-        countEl.textContent = `${dxProjects.length} Systems`;
-      }
-
-      container.innerHTML = dxProjects.map((proj) => {
-        const t = getThemeStyles(proj.statusColor);
-        const titleText = proj.title[currentLang] || proj.title.ja;
-        const descText = proj.description[currentLang] || proj.description.ja;
-        const ctaText = proj.ctaText[currentLang] || proj.ctaText.ja;
-        const isExternal = proj.url.startsWith('http');
-
-        const tagsHtml = proj.tags.map((tag) =>
-          `<span class="text-[10px] font-medium ${t.tag} border px-2 py-0.5 rounded">${tag}</span>`
-        ).join('');
-
-        return `
-          <article class="glass-dark rounded-2xl p-5 shadow-xl border-l-4 ${t.border} transition-all group">
-            <div class="flex items-start justify-between gap-2">
-              <span class="text-[10px] font-bold tracking-wider uppercase ${t.badge} border px-2.5 py-0.5 rounded-md">
-                ${proj.status} • ${proj.category}
-              </span>
-              <a href="${proj.url}" ${isExternal ? 'target="_blank" rel="noopener noreferrer"' : ''} class="text-[11px] text-slate-400 hover:text-white font-mono underline underline-offset-2">
-                Launch ↗
-              </a>
-            </div>
-
-            <h3 class="text-sm sm:text-base font-bold text-white mt-2.5 ${t.titleHover} transition-colors">
-              ${titleText}
-            </h3>
-
-            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-              ${descText}
-            </p>
-
-            <div class="flex flex-wrap gap-1.5 mt-3">
-              ${tagsHtml}
-            </div>
-
-            <button onclick="toggleModal('${proj.modalId}')" class="touch-target focus-ring w-full mt-3.5 flex items-center justify-center space-x-1.5 text-xs font-bold ${t.btn} border rounded-xl py-2.5 transition-all">
-              <span>${ctaText}</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </article>
-        `;
-      }).join('');
-    }
-
-    function setLanguage(lang) {
-      currentLang = lang;
-      const dict = content[lang];
-
-      document.getElementById('nav-org-main-text').textContent = dict.navOrgMain;
-      document.getElementById('nav-org-badge').textContent = dict.navOrgBadge;
-      document.getElementById('nav-org-sub').textContent = dict.navOrgSub;
-      document.getElementById('badge-gov-text').textContent = dict.badgeGov;
-      document.getElementById('badge-base').textContent = dict.badgeBase;
-      document.getElementById('profile-name').textContent = dict.profileName;
-      document.getElementById('profile-role-sub').textContent = dict.profileRoleSub;
-      document.getElementById('profile-affiliation').textContent = dict.profileAffiliation;
-      document.getElementById('profile-headline').textContent = dict.profileHeadline;
-      document.getElementById('profile-desc').textContent = dict.profileDesc;
-      document.getElementById('btn-save-contact').textContent = dict.btnSaveContact;
-      document.getElementById('btn-share-link').textContent = dict.btnShareLink;
-      document.getElementById('label-address').innerHTML = dict.labelAddress;
-      document.getElementById('heading-deployments-text').textContent = dict.headingDeployments;
-      document.getElementById('heading-competencies-text').textContent = dict.headingCompetencies;
-      document.getElementById('box-pitch-title').textContent = dict.boxPitchTitle;
-      document.getElementById('box-pitch-body').textContent = dict.boxPitchBody;
-      document.getElementById('btn-inquiry').textContent = dict.btnInquiry;
-      document.getElementById('footer-text').textContent = dict.footerText;
-      document.getElementById('tab-call').textContent = dict.tabCall;
-      document.getElementById('tab-email').textContent = dict.tabEmail;
-      document.getElementById('tab-vcard').textContent = dict.tabVcard;
-
-      const btnJa = document.getElementById('lang-btn-ja');
-      const btnEn = document.getElementById('lang-btn-en');
-      if (lang === 'ja') {
-        btnJa.className = 'px-2.5 py-1 rounded-full transition-all duration-200 bg-gradient-to-r from-cyan-400 to-blue-500 text-twilight-950 font-bold shadow-sm';
-        btnEn.className = 'px-2.5 py-1 rounded-full transition-all duration-200 text-slate-400 hover:text-white';
-      } else {
-        btnEn.className = 'px-2.5 py-1 rounded-full transition-all duration-200 bg-gradient-to-r from-cyan-400 to-blue-500 text-twilight-950 font-bold shadow-sm';
-        btnJa.className = 'px-2.5 py-1 rounded-full transition-all duration-200 text-slate-400 hover:text-white';
-      }
-
-      renderProjects();
-    }
-
-    function toggleModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal) {
-        modal.classList.toggle('hidden');
-      }
-    }
-
-    function showToast(message) {
-      const toast = document.getElementById('toast');
-      const msg = document.getElementById('toast-message');
-      msg.textContent = message;
-      toast.classList.remove('opacity-0', 'pointer-events-none');
-      toast.classList.add('opacity-100');
-
-      setTimeout(() => {
-        toast.classList.remove('opacity-100');
-        toast.classList.add('opacity-0', 'pointer-events-none');
-      }, 2500);
-    }
-
-    async function copyToClipboard(text, successMsg) {
-      try {
-        if (navigator.clipboard && window.isSecureContext) {
-          await navigator.clipboard.writeText(text);
-        } else {
-          const el = document.createElement('textarea');
-          el.value = text;
-          el.setAttribute('readonly', '');
-          el.style.position = 'absolute';
-          el.style.left = '-9999px';
-          document.body.appendChild(el);
-          el.select();
-          document.execCommand('copy');
-          document.body.removeChild(el);
-        }
-        showToast(successMsg);
-      } catch (err) {
-        showToast('Copy failed');
-      }
-    }
-
-    function copyCardUrl() {
-      copyToClipboard(
-        window.location.href,
-        currentLang === 'ja' ? 'プロフィールURLをコピーしました' : 'Profile URL copied'
-      );
-    }
-
-    function downloadVCard() {
-      const vcardData = [
-        'BEGIN:VCARD',
-        'VERSION:3.0',
-        'N;CHARSET=UTF-8:山本;ウェイン海人;;;',
-        'FN;CHARSET=UTF-8:山本 ウェイン海人 (Wayne Kaito Yamamoto)',
-        'ORG;CHARSET=UTF-8:湯沢町 地域おこし協力隊（起業型）;一般社団法人 雪国観光まちづくり公社',
-        'TITLE;CHARSET=UTF-8:Tourism DX & Inbound Systems',
-        'TEL;TYPE=CELL,VOICE:+81-80-4721-7059',
-        'EMAIL;TYPE=INTERNET:yamawayne4@gmail.com',
-        'URL:https://github.com/umiwumi',
-        'ADR;TYPE=WORK;CHARSET=UTF-8:;;2431-1 Yuzawa (JR Echigo-Yuzawa Station West Exit);Yuzawa-machi, Minamiuonuma-gun;Niigata;949-6101;Japan',
-        'END:VCARD'
-      ].join('\r\n');
-
-      const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
-      const url = URL.createObjectURL(blob);
-      const tempLink = document.createElement('a');
-      tempLink.href = url;
-      tempLink.setAttribute('download', 'Wayne_Kaito_Yamamoto.vcf');
-      document.body.appendChild(tempLink);
-      tempLink.click();
-      document.body.removeChild(tempLink);
-      URL.revokeObjectURL(url);
-
-      showToast(currentLang === 'ja' ? '連絡先 (.vcf) を保存しました' : 'Contact (.vcf) downloaded');
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-      renderProjects();
-    });
-  </script>
-</body>
-</html>
+      return themes[color] || themes
