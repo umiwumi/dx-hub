@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:山本;ウェイン海人;;;
+FN;CHARSET=UTF-8:山本 ウェイン海人 (Wayne Kaito Yamamoto)
+ORG;CHARSET=UTF-8:湯沢町役場;湯沢町 地域おこし協力隊（起業型）
+TITLE;CHARSET=UTF-8:Municipal & Tourism DX
+TEL;TYPE=CELL,VOICE:+81-80-4721-7059
+EMAIL;TYPE=INTERNET:yamawayne4@gmail.com
+URL:https://github.com/umiwumi
+ADR;TYPE=WORK;CHARSET=UTF-8:;;3000 Kandatsu (Yuzawa Town Hall);Yuzawa-machi, Minamiuonuma-gun;Niigata;949-6192;Japan
+END:VCARD
